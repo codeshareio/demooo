@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+}
+
+html{
+    scroll-behavior: smooth!important;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none!important;
+    color: #000!important;
+}
+
+h1{
+    color: var(--blue);
+}
+/* .navbar{
+    z-index: -1!important;
+} */
+.navbar-nav{
+    margin-left: auto!important;
+    font-weight: bold;
+}
+.navbar-brand{
+    /* font-size: 1.5rem!important; */
+    font-weight: bold;
+    color: var(--blue)!important;
+    margin-left: 1vw;
+}
+.nav-item{
+    margin-left: 1vw;
+    text-align: center;
+    font-size: 3vh;
+}
+.nav-item a:hover{
+    background: var(--blue);
+    color: #fff!important;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+/* .main-header{
+    background-image: url('images/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.rightside{
+    color: var(--blue);
+}
+.fa-virus{
+    color: #90B74A;
+}
+.leftside img{
+    animation: corona 5s linear infinite;
+    z-index: 1!important;
+}
+
+@keyframes corona{
+    0% { transform: scale(.75);}
+    20% { transform: scale(1);}
+    40% { transform: scale(.75);}
+    60% { transform: scale(1);}
+    80% { transform: scale(.75);}
+    100% { transform: rotate(1);}
+}
+/* corona-update start */
+.corona-update{
+    width: 100%;
+    height: 100%;
+}
+.corona-update h1{
+          
+    color: var(--blue);
+}
+/* corona-update end */
+/* <!-- About section Start --> */
+
+.about-header h1{
+    color: var(--blue);
+    }
+/* <!-- About section End --> */
+/* Prevent Section start */
+.prevent-img img{
+    height: 10rem;
+}
+.prevent-main p {
+    color: var(--dark-blue);
+    text-align: justify;
+}
+.prevent-main .box:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)!important;
+}
+
+/* Prevent Section end */
+/* symptoms section start */
+.symptoms-main{
+    border-radius: 10px;
+    background: #DEE0E9;
+    opacity: .8;
+}
+.symptoms-box img
+{
+    width: 10rem!important;
+}
+
+/* symptoms section End */
+.card-body h4{
+    color:var(--blue)
+}
+.handwash-main{
+    border-radius: 10px;
+    background: #DEE0E9;
+    opacity: .8;
+}
+.handwash-main .box img
+    {
+        width: 8rem!important; 
+        margin-left: 2rem;  
+    }
+    .handwash-box{
+        margin-left: 2rem!important;
+    }
+
+.scrollable{
+    height: 400px;
+    overflow: scroll;
+}
+.tableheader th{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.scrolltop img{
+    float: right!important;
+}
+#mybtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00A8FF;
+    color: #ffff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#mybtn :hover{
+    background: #606060;
+}
+
+
+@media (max-width: 974px) {
+    .handwash-main .leftbar img
+    {
+             display: none;
+    }
+}
